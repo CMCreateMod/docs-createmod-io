@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 type FeatureItem = {
   title: string;
@@ -14,28 +15,27 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The documentation is built with Docusaurus to be easily used.
+        All programming languages are in one place and code blocks have a copy button ready to be clicked.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Contribute',
+    Svg: require('@site/static/img/github.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Found a mistake? Didn&apos;t find what you are looking for?
+        Feel free to contribute to the docs on <Link href="https://go.createmod.io/github">GitHub</Link>!
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Powered by Docusaurus',
+    Svg: require('@site/static/img/powered_by_docusaurus.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Proudly built with <Link href="https://docusaurus.io">Docusaurus</Link>, an open source documentation website framework.
       </>
     ),
   },
