@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://docs.createmod.io
+
+# Sitemaps
+Sitemap: https://docs.createmod.io/sitemap.xml

@@ -3,21 +3,31 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Create Mod Docs',
+  title: 'Cell Machine Create Mod Docs',
   tagline: 'Documentation for modding, editor plugins & texturepacks',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   url: 'https://docs.createmod.io',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
   onDuplicateRoutes: 'throw',
 
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  headTags: [
+    {
+      tagName: "script",
+      attributes: {
+        src: "https://createmod.io/uts.js",
+        "data-website-id": "c0e02720-a1d3-4493-b150-baf62f9edcf1"
+      }
+    }
+  ],
 
   presets: [
     [
@@ -39,24 +49,21 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Docs',
+      title: "Docs",
       logo: {
         alt: 'Create Mod logo',
-        src: 'img/logo.svg',
+        src: 'img/icon.webp',
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'docSidebar',
-          position: 'left',
-          label: 'Introduction',
+          href: 'https://createmod.io',
+          label: 'Website',
+          position: 'right',
         },
         {
           href: 'https://github.com/cmcreatemod/docs-createmod-io',
-          label: 'GitHub',
+          label: 'Contribute',
           position: 'right',
         },
       ],
@@ -107,8 +114,8 @@ const config: Config = {
               href: 'https://go.createmod.io/github',
             },
             {
-              label: 'Donate',
-              href: 'https://go.createmod.io/patreon',
+              label: 'Privacy',
+              href: 'https://createmod.io/legal/privacy',
             },
           ],
         },
