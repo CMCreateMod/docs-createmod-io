@@ -7,11 +7,9 @@ sidebar_position: 0
 Texture Packs follow a specific file structure:
 
 ```bash
-settings/
+[name]/
 ├── [modid]/
 │   └── [cellid].png
 ├── icon.png
 └── texturepack.json
 ```
-
-
