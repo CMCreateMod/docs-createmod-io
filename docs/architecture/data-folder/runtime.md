@@ -4,7 +4,7 @@ description: "The runtime folder"
 
 # `runtime/`
 
-The runtime folder contains extneral binary files required for some features.
+The runtime folder contains external binary files required for some features.
 
 ```bash
 runtime/
